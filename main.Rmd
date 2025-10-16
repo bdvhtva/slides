@@ -1,0 +1,279 @@
+---
+output:
+  md_document:
+    variant: gfm
+header-includes:
+  - \usepackage{tikz}
+  - \usepackage[T5]{fontenc}
+  - \usepackage[utf8]{inputenc}
+  - \usepackage[vietnamese]{babel}
+---
+  
+# Bài 1: BIỂU THỨC SỐ, BIỂU THỨC ĐẠI SỐ
+
+**Câu hỏi:** Hai biểu thức $3 \cdot 5^2 + 6 \div 2$ và $2 \cdot x + 3 \cdot x^2 \cdot y$ có gì khác nhau?
+
+## 1. BIỂU THỨC SỐ
+
+**Ví dụ:** Hãy viết các biểu thức biểu thị chu vi và diện tích của một hình vuông có cạnh bằng 3 cm.
+
+Ta đã biết: Các số được nối với nhau bởi dấu các phép tính cộng, trừ, nhân, chia, nâng lên lũy thừa tạo thành một *biểu thức*.
+
+Chẳng hạn: $3 + 7 - 2$; $4 \cdot 5 \div 2$; $2(5 + 8)$; $2 \cdot 3^4 + 9$; $5 \cdot 2^3 - 4 \cdot 3^2$ là những biểu thức.
+
+Những biểu thức như trên còn được gọi là *biểu thức số*.
+
+*Ví dụ 1:* Viết biểu thức số biểu thị:
+
+- a) Chu vi của hình chữ nhật có chiều dài bằng 6 cm và chiều rộng bằng 4 cm.
+- b) Diện tích của hình tròn có bán kính bằng 5 cm.
+
+### *Giải*
+
+a) Biểu thức số biểu thị chu vi hình chữ nhật: $2(6 + 4)$.
+
+b) Biểu thức số biểu thị diện tích hình tròn: $\pi \cdot 5^2$.
+
+**Thực hành 1:** Hãy viết biểu thức số biểu thị diện tích của một hình thoi có các đường chéo bằng 6 cm và 8 cm.
+
+## 2. BIỂU THỨC ĐẠI SỐ
+
+**Ví dụ:** Hãy viết biểu thức biểu thị diện tích của một hình chữ nhật có hai cạnh liên tiếp bằng 3 cm và $x$ cm (Hình 1).
+
+```{tikz, echo=FALSE}
+\begin{tikzpicture}
+\draw[thick] (0,0) rectangle (4,2);
+\draw[<->] (0,-0.5) -- (4,-0.5) node[midway,below] {$x$ cm};
+\draw[<->] (-0.5,0) -- (-0.5,2) node[midway,left] {$3$ cm};
+\end{tikzpicture}
+```
+
+**Hình 1**
+
+Diện tích của hình chữ nhật có hai cạnh liên tiếp là 4 cm và $y$ cm được biểu thị bởi biểu thức $4 \cdot y$.
+
+Trong biểu thức này, chữ $y$ đại diện cho một số tùy ý nào đó. Chẳng hạn như:
+
+- Khi $y = 5$ thì biểu thức trên biểu thị diện tích của hình chữ nhật có hai cạnh bằng 4 cm và 5 cm.
+
+- Khi $y = 3$ thì biểu thức trên biểu thị diện tích của hình chữ nhật có hai cạnh bằng 4 cm và 3 cm.
+
+💡 Biểu thức gồm các số và các chữ (đại diện cho số) được nối với nhau bởi các kí hiệu phép toán cộng, trừ, nhân, chia, nâng lên lũy thừa được gọi là *biểu thức đại số*.
+
+Các chữ trong biểu thức đại số được gọi là *biến số* (hay gọi tắt là *biến*).
+
+---
+
+*Ví dụ 2:* $6 \cdot x \cdot y - 2 \cdot x^2 \cdot y$ và $\dfrac{1}{x} - 2y$ là hai biểu thức đại số với hai biến là $x$ và $y$.
+
+$a \cdot b + \dfrac{b^3}{6} + c$ là biểu thức đại số với ba biến là $a$, $b$ và $c$.
+
+Khi viết các biểu thức đại số, người ta thường không viết dấu nhân giữa các chữ, cũng như giữa số và chữ. Chẳng hạn, ta viết $ab$ thay cho $a \cdot b$, viết $6x$ thay cho $6 \cdot x$. Trong một tích, người ta thường không viết thừa số 1, còn thừa số $(-1)$ được thay bằng dấu "$-$"; chẳng hạn, ta viết $xy$ thay cho $1 \cdot xy$ và viết $-x$ thay cho $(-1) \cdot x$. Với tích của một số với chữ thì ta viết số đứng trước, chẳng hạn, ta viết $4xy$ thay cho $xy \cdot 4$.
+
+*Lưu ý:* Trong biểu thức đại số:
+
+- Người ta cũng dùng các dấu ngoặc để chỉ thứ tự thực hiện các phép tính.
+
+- Vì biến đại diện cho số nên khi thực hiện các phép tính trên các biến, ta có thể áp dụng những tính chất, quy tắc phép tính như trên các số. Chẳng hạn:
+
+  - $x + y = y + x$;
+  - $x + (y + z) = (x + y) + z$;
+  - $x(y + z) = xy + xz$;
+  - $xy = yx$;
+  - $x(yz) = (xy)z$;
+  - $-x(y - z) = -xy + xz$; ...
+
+*Ví dụ 3:* Viết biểu thức biểu thị diện tích toàn phần của hình hộp chữ nhật có ba cạnh là 4 cm, $x$ cm và $y$ cm (Hình 2).
+
+```{tikz, echo=FALSE}
+\begin{tikzpicture}
+\draw[thick] (0,0) -- (4,0) -- (4,3) -- (0,3) -- cycle;
+\draw[thick] (0,3) -- (1,4) -- (5,4) -- (4,3) -- cycle;
+\draw[thick] (4,0) -- (5,1) -- (5,4) -- (4,3) -- cycle;
+\draw[dashed] (0,0) -- (1,1) -- (1,4);
+\draw[dashed] (1,1) -- (5,1);
+\node[below] at (2,0) {$4$};
+\node[right] at (5,2.5) {$y$};
+\node[right] at (4.5,0.5) {$x$};
+\end{tikzpicture}
+```
+
+**Hình 2**
+
+### *Giải*
+
+Diện tích toàn phần của hình hộp chữ nhật nói trên là:
+
+$2 \cdot (4 + x) \cdot y + 2 \cdot (4 \cdot x) = 8y + 2xy + 8x = 8x + 8y + 2xy$ (cm²).
+
+Vậy biểu thức biểu thị diện tích toàn phần của hình hộp trên là $8x + 8y + 2xy$ (cm²).
+
+*Ví dụ 4:* Viết biểu thức biểu thị diện tích của hình chữ nhật có chiều dài hơn chiều rộng 3 cm.
+
+### *Giải*
+
+Gọi $a$ cm là chiều rộng của hình chữ nhật thì chiều dài của hình chữ nhật bằng $(a + 3)$ cm.
+
+Diện tích hình chữ nhật nói trên là: $a \cdot (a + 3) = a^2 + 3a$ (cm²).
+
+Vậy biểu thức biểu thị diện tích của hình chữ nhật trên là $a^2 + 3a$ (cm²).
+
+*Ví dụ 5:* Rút gọn các biểu thức sau:
+
+- a) $6x + 4x$;
+- b) $4(x + 2x) - (x^2 - 2x)$.
+
+### *Giải*
+
+a) $6x + 4x = (6 + 4)x = 10x$.
+
+b) $4(x + 2x) - (x^2 - 2x) = 4x + 8x - x^2 + 2x$ (tính chất phân phối)
+   $= 4x + 8x + 2x - x^2$ (tính chất giao hoán)
+   $= 14x - x^2$
+
+---
+
+**Thực hành 2:**
+
+a) Hãy viết biểu thức biểu thị thể tích khối lập phương có cạnh bằng $a$.
+
+b) Hãy viết biểu thức biểu thị diện tích hình thang có đáy lớn bằng $a$ cm, đáy nhỏ bằng $b$ cm, đường cao bằng $h$ cm.
+
+
+```{tikz, echo=FALSE}
+\begin{tikzpicture}[scale=0.5]
+\draw[thick] (0,0) rectangle (6,8);
+\draw[thick] (0.5,0.5) rectangle (5.5,7.5);
+\node[above] at (3,8) {$3a$};
+\node[right] at (6,4) {$4a$};
+\draw[<->] (3,7.5) -- (3,8) node[midway,right] {$2$};
+\draw[<->] (5.5,4) -- (6,4) node[midway,above] {$2$};
+\end{tikzpicture}
+```
+
+**Hình 3**
+
+**Vận dụng 1:**
+
+Một khung ảnh hình chữ nhật với hai cạnh liên tiếp bằng $3a$ cm và $4a$ cm với bề rộng bằng 2 cm (xem Hình 3). Viết biểu thức biểu thị diện tích của tấm ảnh trong Hình 3.
+
+## 3. GIÁ TRỊ CỦA BIỂU THỨC ĐẠI SỐ
+
+**Ví dụ:** Một khu vườn hình chữ nhật có chiều dài là 10 m, chiều rộng là 6 m. Người ta làm lối đi như trong Hình 4 (phần tô màu vàng).
+
+
+```{tikz, echo=FALSE}
+\begin{tikzpicture}[scale=0.5]
+
+\draw[thick] (0,0) rectangle (10,6);
+\fill[cyan!60] (0,0) rectangle (10,6);
+\fill[yellow!60] (0,5) rectangle (6,6);
+\fill[yellow!60] (5,0) rectangle (6,5);
+
+\draw[] (0,5) -- (5,5);
+\draw[] (5,0) -- (5,5);
+\draw[] (6,0) -- (6,6);
+
+\draw[<->] (0,6.3) -- (10,6.3) node[midway,above] {$10$};
+\node[right] at (10,3) {$6$};
+\draw[<->] (0,4.7) -- (5,4.7) node[midway,below] {$5$};
+\draw[<->] (-0.3,5) -- (-0.3,6) node[midway,left] {$y$};
+\draw[<->] (5,-0.3) -- (6,-0.3) node[midway,below] {$x$};
+
+\end{tikzpicture}
+```
+
+**Hình 4**
+
+a) Hãy viết biểu thức biểu thị diện tích phần còn lại của khu vườn.
+
+b) Tính diện tích phần còn lại của khu vườn khi $x = 1$ m và $y = 0{,}8$ m.
+
+---
+
+Cho biểu thức $x^2 - 2xy + 1$.
+
+Khi thay $x = 3$ và $y = 1$ vào biểu thức, ta được: $3^2 - 2 \cdot 3 \cdot 1 + 1 = 4$.
+
+Ta nói: 4 là giá trị của biểu thức $x^2 - 2xy + 1$ khi $x = 3$ và $y = 1$,
+
+hoặc khi $x = 3$ và $y = 1$ thì giá trị của biểu thức $x^2 - 2xy + 1$ là 4.
+
+💡 Để tính *giá trị của một biểu thức đại số* tại những giá trị cho trước của các biến, ta thay các giá trị cho trước đó vào biểu thức rồi thực hiện các phép tính.
+
+*Ví dụ 6:* Tính giá trị của biểu thức $a^2 - 5b + 1$ khi $a = 4$ và $b = 2$.
+
+### *Giải*
+
+Thay $a = 4$ và $b = 2$ vào biểu thức trên, ta được: $4^2 - 5 \cdot 2 + 1 = 7$.
+
+Vậy khi $a = 4$ và $b = 2$ thì giá trị của biểu thức $a^2 - 5b + 1$ là 7.
+
+*Ví dụ 7:* Tính giá trị của biểu thức $2[(a - b)^2 \cdot c]$ khi $a = 13$, $b = 7$ và $c = 3$.
+
+### *Giải*
+
+Thay $a = 13$, $b = 7$ và $c = 3$ vào biểu thức trên, ta được:
+
+$2 \cdot [(13 - 7)^2 \cdot 3] = 2 \cdot (6^2 \cdot 3) = 2 \cdot (36 \cdot 3) = 2 \cdot 108 = 216$.
+
+Vậy giá trị của biểu thức trên khi $a = 13$, $b = 7$ và $c = 3$ là 216.
+
+**Thực hành 3:** Hãy tính giá trị của biểu thức $3x^2 - 4x + 2$ khi $x = 2$.
+
+---
+
+**Vận dụng 2:** Cho biết giá bán của một đôi giày bằng $C + Cr$, trong đó $C$ là giá gốc và $r$ là thuế giá trị gia tăng.
+
+Tính giá bán của đôi giày khi $C = 600$ nghìn đồng và $r = 10\%$.
+
+---
+
+## BÀI TẬP
+
+1. Hãy viết biểu thức số biểu thị diện tích xung quanh của một hình hộp chữ nhật có chiều dài bằng 7 cm, chiều rộng bằng 4 cm và chiều cao bằng 2 cm.
+
+2. Hãy viết biểu thức đại số biểu thị chu vi của một hình chữ nhật có chiều dài hơn chiều rộng 7 cm.
+
+3. Hãy viết biểu thức đại số biểu thị thể tích của một hình hộp chữ nhật có chiều dài hơn chiều rộng 4 cm và hơn chiều cao 2 cm.
+
+4. Hãy viết biểu thức đại số biểu thị:
+   - a) Tổng của $x^2$ và $3y$;
+   - b) Tổng các bình phương của $a$ và $b$.
+
+5. Lan có $x$ nghìn đồng và đã chi tiêu hết $y$ nghìn đồng, sau đó Lan được chị Mai cho $z$ nghìn đồng. Hãy viết biểu thức đại số biểu thị số tiền mà Lan có sau khi chị Mai cho thêm $z$ nghìn đồng. Tính số tiền Lan có khi $x = 100$, $y = 60$, $z = 50$.
+
+6. Rút gọn các biểu thức đại số sau:
+   - a) $6(y - x) - 2(x - y)$;
+   - b) $3x^2 + x - 4x - 5x^2$.
+
+
+```{tikz, echo=FALSE}
+\begin{tikzpicture}[scale=0.5]
+
+\draw[thick] (0,0) rectangle (6,6);
+\fill[orange!60] (0,0) rectangle (6,6);
+
+\fill[white] (1.2,1.2) rectangle (4.8,4.8);
+\draw[thick] (1.2,1.2) rectangle (4.8,4.8);
+
+\draw[<->] (3,4.8) -- (3,6) node[midway,right] {$1.2$};
+\draw[<->] (4.8,3) -- (6,3) node[midway,above] {$1.2$};
+
+\node[above] at (3,6) {$a$};
+\end{tikzpicture}
+```
+
+**Hình 5**
+
+7. Một mảnh vườn hình vuông (Hình 5) có cạnh bằng $a$ (m) với lối đi xung quanh vườn rộng 1,2 m. Hãy viết biểu thức biểu thị diện tích phần còn lại của mảnh vườn. Tính diện tích còn lại của mảnh vườn khi $a = 20$.
+
+8. Lương trung bình tháng của công nhân ở một xí nghiệp vào năm thứ $n$ tính từ năm 2015 được tính bởi biểu thức $C(1 + 0{,}04)^n$, trong đó $C = 5$ triệu đồng. Hãy tính lương trung bình tháng của công nhân xí nghiệp đó vào năm 2020 (ứng với $n = 5$).
+
+---
+
+## Sau bài học này, em đã làm được những gì?
+
+- Nhận biết được biểu thức số và biểu thức đại số.
+- Viết được biểu thức đại số biểu diễn các đại lượng quen thuộc trong hình học hay trong đời sống.
+- Tính được giá trị của một biểu thức đại số.
