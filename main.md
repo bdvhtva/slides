@@ -286,7 +286,7 @@ là 🔢 dữ liệu định lượng.
 **a) Phân loại dữ liệu: 📊**
 
 - 📝 Dữ liệu định tính: Khả năng tự nấu ăn
-- 🔢 Dữ liệu định lượng: Số bạn nữ tự đánh giá
+- 🔢 Dữ liệu định lượng: Số bạn nữ
 
 **b) Dữ liệu không đại diện vì: ⚠️**
 
@@ -415,7 +415,7 @@ là 🔢 dữ liệu định lượng.
 
 <div style="visibility: hidden;">
 
-**Dữ liệu trong bảng chưa hợp lý** ❗
+**Dữ liệu không hợp lý** ❗
 
 Tổng tỉ lệ phần trăm của tất cả các thành phần không bằng 100%:
 
@@ -452,7 +452,7 @@ $$
 
 <div>
 
-**Dữ liệu trong bảng chưa hợp lý** ❗
+**Dữ liệu không hợp lý** ❗
 
 Tổng tỉ lệ phần trăm của tất cả các thành phần không bằng 100%:
 
