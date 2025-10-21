@@ -1,0 +1,527 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\makeatletter
+\newsavebox\pandoc@box
+\newcommand*\pandocbounded[1]{% scales image to fit in text height/width
+  \sbox\pandoc@box{#1}%
+  \Gscale@div\@tempa{\textheight}{\dimexpr\ht\pandoc@box+\dp\pandoc@box\relax}%
+  \Gscale@div\@tempb{\linewidth}{\wd\pandoc@box}%
+  \ifdim\@tempb\p@<\@tempa\p@\let\@tempa\@tempb\fi% select the smaller of both
+  \ifdim\@tempa\p@<\p@\scalebox{\@tempa}{\usebox\pandoc@box}%
+  \else\usebox{\pandoc@box}%
+  \fi%
+}
+% Set default figure placement to htbp
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead{}
+\fancyhead[L]{CƠ SỞ DẠY THÊM THÀNH NHÂN}
+\fancyhead[C]{ZALO LIÊN HỆ}
+\fancyhead[R]{BIỂU THỨC ĐẠI SỐ}
+\fancyfoot[C]{\thepage}
+\renewcommand{\footrulewidth}{0.4pt}
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\author{}
+\date{\vspace{-2.5em}}
+
+\begin{document}
+
+\section{Biểu Thức Số và Biểu Thức Đại
+Số}\label{biux1ec3u-thux1ee9c-sux1ed1-vuxe0-biux1ec3u-thux1ee9c-ux111ux1ea1i-sux1ed1}
+
+\subsection{Câu Hỏi Mở Đầu}\label{cuxe2u-hux1ecfi-mux1edf-ux111ux1ea7u}
+
+Hai biểu thức \(3 \cdot 5^2 + 6 \div 2\) và
+\(2 \cdot x + 3 \cdot x^2 \cdot y\) có gì khác nhau?
+
+Trả lời: Biểu thức đầu chỉ chứa số (biểu thức số), biểu thức thứ hai
+chứa cả chữ và số (biểu thức đại số).
+
+\subsection{1. Biểu Thức Số}\label{biux1ec3u-thux1ee9c-sux1ed1}
+
+\subsubsection{Ta đã biết}\label{ta-ux111uxe3-biux1ebft}
+
+Các số được nối với nhau bởi dấu các phép tính cộng, trừ, nhân, chia,
+nâng lên lũy thừa tạo thành một \emph{biểu thức}.
+
+\paragraph{Ví dụ}\label{vuxed-dux1ee5}
+
+\begin{itemize}
+\tightlist
+\item
+  \(3 + 7 - 2\)
+\item
+  \(4 \cdot 5 \div 2\)
+\item
+  \(2(5 + 8)\)
+\item
+  \(2 \cdot 3^4 + 9\)
+\item
+  \(5 \cdot 2^3 - 4 \cdot 3^2\)
+\end{itemize}
+
+\paragraph{Ví dụ 1}\label{vuxed-dux1ee5-1}
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi})}
+\item
+  Chu vi hình chữ nhật có chiều dài 6 cm và chiều rộng 4 cm:
+  \(P = 2(6 + 4)\)
+\item
+  Diện tích hình tròn có bán kính 5 cm: \(A = \pi \cdot 5^2\)
+\end{enumerate}
+
+\paragraph{Thực hành 1}\label{thux1ef1c-huxe0nh-1}
+
+Hãy viết biểu thức số biểu thị diện tích của một hình thoi có các đường
+chéo bằng 6 cm và 8 cm:
+
+\[A = \frac{6 \times 8}{2}\]
+
+\subsection{2. Biểu Thức Đại
+Số}\label{biux1ec3u-thux1ee9c-ux111ux1ea1i-sux1ed1}
+
+\subsubsection{Kiến thức trọng
+tâm}\label{kiux1ebfn-thux1ee9c-trux1ecdng-tuxe2m}
+
+Biểu thức gồm các số và các chữ (đại diện cho số) được nối với nhau bởi
+các kí hiệu phép toán cộng, trừ, nhân, chia, nâng lên lũy thừa được gọi
+là \emph{biểu thức đại số}.
+
+Các chữ trong biểu thức đại số được gọi là \emph{biến số} (hay gọi tắt
+là \emph{biến}).
+
+\paragraph{Ví dụ 2}\label{vuxed-dux1ee5-2}
+
+\begin{itemize}
+\tightlist
+\item
+  \(6 \cdot x \cdot y - 2 \cdot x^2 \cdot y\) và \(\dfrac{1}{x} - 2y\)
+  là hai biểu thức đại số với hai biến là \(x\) và \(y\).
+\item
+  \(a \cdot b + \dfrac{b^3}{6} + c\) là biểu thức đại số với ba biến là
+  \(a\), \(b\) và \(c\).
+\end{itemize}
+
+\subsubsection{Quy ước}\label{quy-ux1b0ux1edbc}
+
+\begin{itemize}
+\tightlist
+\item
+  Không viết dấu nhân giữa các chữ: \(ab\) thay cho \(a \cdot b\)
+\item
+  Không viết dấu nhân giữa số và chữ: \(6x\) thay cho \(6 \cdot x\)
+\item
+  Không viết thừa số 1: \(xy\) thay cho \(1 \cdot xy\)
+\item
+  Thừa số \((-1)\) thay bằng dấu trừ: \(-x\) thay cho \((-1) \cdot x\)
+\item
+  Số viết trước chữ: \(4xy\) thay cho \(xy \cdot 4\)
+\end{itemize}
+
+\subsubsection{Lưu ý}\label{lux1b0u-uxfd}
+
+Trong biểu thức đại số:
+
+\begin{itemize}
+\item
+  Người ta cũng dùng các dấu ngoặc để chỉ thứ tự thực hiện các phép
+  tính.
+\item
+  Vì biến đại diện cho số nên khi thực hiện các phép tính trên các biến,
+  ta có thể áp dụng những tính chất, quy tắc phép tính như trên các số.
+  Chẳng hạn:
+
+  \(x + y = y + x\)
+
+  \(x + (y + z) = (x + y) + z\)
+
+  \(x(y + z) = xy + xz\)
+
+  \(xy = yx\)
+
+  \(x(yz) = (xy)z\)
+
+  \(-x(y - z) = -xy + xz\)
+\end{itemize}
+
+\paragraph{Ví dụ 3}\label{vuxed-dux1ee5-3}
+
+Viết biểu thức biểu thị diện tích toàn phần của hình hộp chữ nhật có ba
+cạnh là 4 cm, \(x\) cm và \(y\) cm (Hình 2).
+
+\pandocbounded{\includegraphics[keepaspectratio]{07_01_files/figure-latex/unnamed-chunk-1-1.pdf}}
+
+Hình 2
+
+Giải
+
+Diện tích toàn phần của hình hộp chữ nhật nói trên là:
+
+\(2 \cdot (4 + x) \cdot y + 2 \cdot (4 \cdot x) = 8y + 2xy + 8x = 8x + 8y + 2xy\)
+(cm²).
+
+Vậy biểu thức biểu thị diện tích toàn phần của hình hộp trên là
+\(8x + 8y + 2xy\) (cm²).
+
+\paragraph{Ví dụ 4}\label{vuxed-dux1ee5-4}
+
+Viết biểu thức biểu thị diện tích của hình chữ nhật có chiều dài hơn
+chiều rộng 3 cm.
+
+Giải
+
+Gọi \(a\) cm là chiều rộng của hình chữ nhật thì chiều dài của hình chữ
+nhật bằng \((a + 3)\) cm.
+
+Diện tích hình chữ nhật nói trên là: \(a \cdot (a + 3) = a^2 + 3a\)
+(cm²).
+
+Vậy biểu thức biểu thị diện tích của hình chữ nhật trên là \(a^2 + 3a\)
+(cm²).
+
+\paragraph{Ví dụ 5}\label{vuxed-dux1ee5-5}
+
+Rút gọn các biểu thức sau:
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi})}
+\item
+  \(6x + 4x\)
+\item
+  \(4(x + 2x) - (x^2 - 2x)\)
+\end{enumerate}
+
+Giải
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi})}
+\item
+  \[6x + 4x = (6 + 4)x = 10x\]
+\item
+  \begin{align*}
+  4(x + 2x) - (x^2 - 2x) &= 4x + 8x - x^2 + 2x \text{ (tính chất phân phối)} \\
+  &= 4x + 8x + 2x - x^2 \text{ (tính chất giao hoán)} \\
+  &= 14x - x^2
+  \end{align*}
+\end{enumerate}
+
+\paragraph{Thực hành 2}\label{thux1ef1c-huxe0nh-2}
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi})}
+\item
+  Hãy viết biểu thức biểu thị thể tích khối lập phương có cạnh bằng
+  \(a\): \(a^3\)
+\item
+  Hãy viết biểu thức biểu thị diện tích hình thang có đáy lớn bằng \(a\)
+  cm, đáy nhỏ bằng \(b\) cm, đường cao bằng \(h\) cm:
+  \(\dfrac{(a + b)h}{2}\)
+\end{enumerate}
+
+\subsubsection{Vận dụng 1}\label{vux1eadn-dux1ee5ng-1}
+
+Một khung ảnh hình chữ nhật với hai cạnh liên tiếp bằng \(3a\) cm và
+\(4a\) cm với bề rộng bằng 2 cm (xem Hình 3). Viết biểu thức biểu thị
+diện tích của tấm ảnh trong Hình 3.
+
+\pandocbounded{\includegraphics[keepaspectratio]{07_01_files/figure-latex/unnamed-chunk-2-1.pdf}}
+
+Hình 3
+
+Giải
+
+Diện tích tấm ảnh:
+
+\begin{align*}
+A &= (3a - 2\cdot2)(4a - 2\cdot2) \\
+&= (3a - 4)(4a - 4) \\
+&= 12a^2 - 12a - 16a + 16 \\
+&= 12a^2 - 28a + 16 \text{ (cm}^2\text{)}
+\end{align*}
+
+\subsection{3. Giá Trị Của Biểu Thức Đại
+Số}\label{giuxe1-trux1ecb-cux1ee7a-biux1ec3u-thux1ee9c-ux111ux1ea1i-sux1ed1}
+
+\subsubsection{Kiến thức trọng
+tâm}\label{kiux1ebfn-thux1ee9c-trux1ecdng-tuxe2m-1}
+
+Để tính giá trị của biểu thức đại số, ta thay các giá trị cho trước vào
+biểu thức rồi thực hiện các phép tính.
+
+\paragraph{Ví dụ}\label{vuxed-dux1ee5-6}
+
+Cho biểu thức \(x^2 - 2xy + 1\).
+
+Khi thay \(x = 3\) và \(y = 1\) vào biểu thức, ta được:
+\(3^2 - 2 \cdot 3 \cdot 1 + 1 = 4\).
+
+Ta nói: 4 là giá trị của biểu thức \(x^2 - 2xy + 1\) khi \(x = 3\) và
+\(y = 1\),
+
+hoặc khi \(x = 3\) và \(y = 1\) thì giá trị của biểu thức
+\(x^2 - 2xy + 1\) là 4.
+
+\paragraph{Ví dụ 6}\label{vuxed-dux1ee5-6-1}
+
+Tính giá trị của biểu thức \(a^2 - 5b + 1\) khi \(a = 4\) và \(b = 2\).
+
+Giải
+
+Thay \(a = 4\) và \(b = 2\) vào biểu thức trên, ta được:
+\(4^2 - 5 \cdot 2 + 1 = 7\).
+
+Vậy khi \(a = 4\) và \(b = 2\) thì giá trị của biểu thức
+\(a^2 - 5b + 1\) là 7.
+
+\paragraph{Ví dụ 7}\label{vuxed-dux1ee5-7}
+
+Tính giá trị của biểu thức \(2[(a - b)^2 \div c]\) khi \(a = 13\),
+\(b = 7\) và \(c = 3\).
+
+Giải
+
+Thay \(a = 13\), \(b = 7\) và \(c = 3\) vào biểu thức trên, ta được:
+
+\[ 2[(13 - 7)^2 \div 3] = 2(6^2 \div 3) = 2(36 \div 3) = 2 \cdot 12 = 24 \]
+
+Vậy giá trị của biểu thức trên khi \(a = 13\), \(b = 7\) và \(c = 3\) là
+24.
+
+\paragraph{Thực hành 3}\label{thux1ef1c-huxe0nh-3}
+
+Tính giá trị của \(3x^2 - 4x + 2\) khi \(x = 2\).
+
+Giải
+
+Thay \(x = 2\) vào biểu thức trên, ta được:
+
+\begin{align*}
+3(2)^2 - 4(2) + 2 &= 3 \cdot 4 - 8 + 2 \\
+&= 12 - 8 + 2 \\
+&= 6
+\end{align*}
+
+Vậy giá trị của biểu thức trên khi \(x = 2\) là 6.
+
+\subsubsection{Vận dụng 2}\label{vux1eadn-dux1ee5ng-2}
+
+Cho biết giá bán của một đôi giày bằng \(C + Cr\), trong đó \(C\) là giá
+gốc và \(r\) là thuế giá trị gia tăng.
+
+Tính giá bán của đôi giày khi \(C = 600\) nghìn đồng và \(r = 10\%\).
+
+Giải
+
+\begin{align*}
+\text{Giá bán} &= 600 + 600 \times 10\% \\
+&= 600 + 60 \\
+&= 660 \text{ (nghìn đồng)}
+\end{align*}
+
+\subsection{Bài Tập}\label{buxe0i-tux1eadp}
+
+\subsubsection{Bài 1}\label{buxe0i-1}
+
+Viết biểu thức số biểu thị diện tích xung quanh hình hộp chữ nhật có
+chiều dài 7 cm, chiều rộng 4 cm, chiều cao 2 cm
+
+Giải
+
+\[2(7 + 4) \times 2\]
+
+\subsubsection{Bài 2}\label{buxe0i-2}
+
+Viết biểu thức đại số biểu thị chu vi hình chữ nhật có chiều dài hơn
+chiều rộng 7 cm
+
+Giải
+
+Gọi \(x\) (cm) là chiều rộng
+
+Chiều dài: \(x + 7\) (cm)
+
+Chu vi: \[2[x + (x + 7)] = 2(2x + 7) = 4x + 14 \text{ (cm)}\]
+
+\subsubsection{Bài 3}\label{buxe0i-3}
+
+Viết biểu thức đại số biểu thị thể tích hình hộp chữ nhật có chiều dài
+hơn chiều rộng 4 cm và hơn chiều cao 2 cm
+
+Giải
+
+Gọi \(x\) (cm) là chiều cao
+
+Chiều rộng: \(x + 2\) (cm)
+
+Chiều dài: \(x + 4\) (cm)
+
+Thể tích: \[x(x + 2)(x + 4) \text{ (cm}^3\text{)}\]
+
+\subsubsection{Bài 4}\label{buxe0i-4}
+
+Viết biểu thức đại số biểu thị
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi})}
+\tightlist
+\item
+  Tổng của \(x^2\) và \(3y\)
+\item
+  Tổng các bình phương của \(a\) và \(b\)
+\end{enumerate}
+
+Giải
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi})}
+\tightlist
+\item
+  \(x^2 + 3y\)
+\item
+  \(a^2 + b^2\)
+\end{enumerate}
+
+\subsubsection{Bài 5}\label{buxe0i-5}
+
+Lan có \(x\) nghìn đồng, chi \(y\) nghìn đồng, được cho thêm \(z\) nghìn
+đồng. Viết biểu thức và tính khi \(x = 100\), \(y = 60\), \(z = 50\)
+
+Giải
+
+Biểu thức: \(x - y + z\) (nghìn đồng)
+
+Khi \(x = 100\), \(y = 60\), \(z = 50\):
+
+\[100 - 60 + 50 = 90 \text{ (nghìn đồng)}\]
+
+\subsubsection{Bài 6}\label{buxe0i-6}
+
+Rút gọn
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi})}
+\tightlist
+\item
+  \(6(y - x) - 2(x - y)\)
+\item
+  \(3x^2 + x - 4x - 5x^2\)
+\end{enumerate}
+
+Giải
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi})}
+\tightlist
+\item
+\end{enumerate}
+
+\[
+6(y - x) - 2(x - y) = 6y - 6x - 2x + 2y = 8y - 8x
+\]
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi})}
+\setcounter{enumi}{1}
+\tightlist
+\item
+  \[3x^2 + x - 4x - 5x^2 = -2x^2 - 3x\]
+\end{enumerate}
+
+\subsubsection{Bài 7}\label{buxe0i-7}
+
+Mảnh vườn hình vuông cạnh \(a\) (m), lối đi xung quanh rộng 1,2 m. Viết
+biểu thức diện tích còn lại và tính khi \(a = 20\)
+
+\pandocbounded{\includegraphics[keepaspectratio]{07_01_files/figure-latex/unnamed-chunk-3-1.pdf}}
+
+Hình 5
+
+Giải
+
+Cạnh phần còn lại: \[a - 2(1{,}2) = a - 2{,}4 \text{ (m)}\]
+
+Biểu thức diện tích còn lại: \[(a - 2{,}4)^2 \text{ (m}^2\text{)}\]
+
+Biểu thức diện tích còn lại khi \(a = 20\):
+\[(20 - 2{,}4)^2 = (17{,}6)^2 = 309{,}76 \text{ (m}^2\text{)}\]
+
+\subsubsection{Bài 8}\label{buxe0i-8}
+
+Lương tháng năm thứ \(n\): \(C(1 + 0{,}04)^n\) với \(C = 5\) triệu đồng.
+Tính lương năm 2020 (\(n = 5\))
+
+Giải
+
+\begin{align*}
+\text{Lương} &= 5(1 + 0{,}04)^5 \\
+&= 5 \times (1{,}04)^5 \\
+&= 5 \times 1{,}2166529... \\
+&\approx 6{,}08 \text{ (triệu đồng)}
+\end{align*}
+
+\subsection{Sau bài học này, em đã làm được những
+gì?}\label{sau-buxe0i-hux1ecdc-nuxe0y-em-ux111uxe3-luxe0m-ux111ux1b0ux1ee3c-nhux1eefng-guxec}
+
+\begin{itemize}
+\tightlist
+\item
+  Nhận biết được biểu thức số và biểu thức đại số.
+\item
+  Viết được biểu thức đại số biểu diễn các đại lượng quen thuộc trong
+  hình học hay trong đời sống.
+\item
+  Tính được giá trị của một biểu thức đại số.
+\end{itemize}
+
+\end{document}

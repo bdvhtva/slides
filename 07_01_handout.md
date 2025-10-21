@@ -19,6 +19,9 @@ Những biểu thức như trên còn được gọi là *biểu thức số*.
 
 ### *Giải*
 
+\vspace{3\baselineskip}
+
+
 a) Biểu thức số biểu thị chu vi hình chữ nhật: $2(6 + 4)$.
 
 b) Biểu thức số biểu thị diện tích hình tròn: $\pi \cdot 5^2$.
